@@ -1,24 +1,26 @@
-import Header from './Components/Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer';
-import {ReactRouter, Routes, Route, Link} from 'react-router-dom';
+import Header from './Components/Header';
+import HomePage from './Views/HomePage';
+import AboutPage from './Views/AboutPage';
+import ProductPage from './Views/ProductPage';
 
 function App() {
   return (
-    <div className="content">
-      <Header />
-      <p className="m-3 p-3 border-2 border-dashed">
-        This is the main content of the app.
-      </p>
+    <div className="relative pb-10 min-h-screen">
+      <BrowserRouter> 
+        <Header />
 
-      <Router>
-        
-      </Router>
-      <Footer />
-      
+        <Routes>
+          <Route exact path="/" element={<HomePage />}></Route>
+          <Route exact path="/about" element={<AboutPage />}></Route>
+          <Route exact path="/products/:id" element={<ProductPage />}></Route>
+        </Routes>
 
+        <Footer />
+      </BrowserRouter>
     </div>
-
   );
-};
+}
 
 export default App;
