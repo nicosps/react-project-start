@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
-    "@rsbuild/core": "^1.5.6",
+    "@rsbuild/core": "^1.5.12",
     "@rsbuild/plugin-react": "^1.4.0",
     "eslint": "^9.35.0",
     "eslint-plugin-react-hooks": "^5.2.0",
