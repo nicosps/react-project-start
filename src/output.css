@@ -6,11 +6,11 @@
 .fixed {
   position: fixed;
 }
-.z-50 {
-  z-index: 50;
+.relative {
+  position: relative;
 }
-.block {
-  display: block;
+.z-\[200\] {
+  z-index: 200;
 }
 .flex {
   display: flex;
@@ -18,14 +18,23 @@
 .h-full {
   height: 100%;
 }
-.w-4\/5 {
-  width: calc(4/5 * 100%);
+.h-screen {
+  height: 100vh;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-full {
   width: 100%;
 }
+.w-screen {
+  width: 100vw;
+}
 .transform {
   transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -33,21 +42,29 @@
 .justify-between {
   justify-content: space-between;
 }
-.border-2 {
-  border-style: var(--tw-border-style);
-  border-width: 2px;
+.justify-center {
+  justify-content: center;
 }
-.border-t {
-  border-top-style: var(--tw-border-style);
-  border-top-width: 1px;
+.overflow-hidden {
+  overflow: hidden;
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
 }
 .border-b {
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
 }
-.border-dashed {
-  --tw-border-style: dashed;
-  border-style: dashed;
+.border-l {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 1px;
+}
+.bg-cover {
+  background-size: cover;
+}
+.object-cover {
+  object-fit: cover;
 }
 .text-center {
   text-align: center;
@@ -60,6 +77,8 @@
   height: 50px;
   --webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+  align-content: center;
+  justify-content: center;
 }
 @-webkit-keyframes spin {
   0% {

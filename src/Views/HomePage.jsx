@@ -21,7 +21,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1 className="font-bold text-2xl mb-3">Best Sellers</h1>
+      <h1 className="font-bold text-2xl mb-">Best Sellers</h1>
       {content}
     </div>
   );
