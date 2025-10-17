@@ -57,7 +57,7 @@ export default function Navigation() {
                 backgroundRepeat: 'no-repeat',
                 backgroundColor: '#f3f4f6', // Optional: fallback color
               }}
-              className="bg-white p-6 border-l border-gray-200 flex flex-col"
+              // className="bg-white p-6 border-l border-gray-200 flex flex-col"
             >
               <NavMenu classMenu={() => setShowMenu(false)} />
             </animated.div>
