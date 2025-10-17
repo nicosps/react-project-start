@@ -19,10 +19,18 @@ export default function HomePage() {
       <ProductItem key={product.id} product={product} />
     ));
 
+// ...existing code...
   return (
     <div>
-      <h1 className="font-bold text-2xl mb-">Best Sellers</h1>
-      {content}
+      <h1 style={{padding: '10px'}}>Best Sellers</h1>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 1fr)', // <-- fixed
+        gap: '10px',
+      }}>
+        {content}
+      </div>
     </div>
   );
+// ...existing code...
 }

@@ -16,23 +16,23 @@ export default function ProductPage() {
   if (product.data)
     content = (
       <div>
-        <h1 className="text-2xl font-bold mb-3">{product.data.name}</h1>
+        <h1>{product.data.name}</h1>
+        <div style={{fontSize: '1.25rem',
+          marginBottom: '20px',
+        }}> ${product.data.price}</div>
         <div>
           <img
             src={product.data.images}
             alt={product.data.name}
-            width={100}
-            height={100}
+            width='100%'
+            height='100%'
           />
         </div>
-        <div className="font-bold text-xl mb-3"> $ {product.data.price}</div>
-        <div>{product.data.description}</div>
       </div>
     );
 
   return (
     <div>
-      <h1>Product Page</h1>
       {content}
     </div>
   );
